@@ -47,5 +47,9 @@
     "streambuf": "cpp",
     "typeinfo": "cpp"
   },
-  "python.formatting.provider": "black"
+  "python.formatting.provider": "black",
+  "files.exclude": {
+    "*.class": true,
+    "*.out": true
+  }
 }
