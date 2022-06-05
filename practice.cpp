@@ -1,26 +1,18 @@
 #include <iostream>
-#include <queue>
-#include <tuple>
-#include <utility>
-#include <vector>
 
 using namespace std;
 
-void process() {
-  int answer;
-  cout << answer << endl;
+int nqueen(int N) {
+  auto backtrack = [
 }
 
 int main() {
-  ios::sync_with_stdio(0);
+  cin.tie(0)->sync_with_stdio(0);
   cin.tie(0);
-  int T;
-  cin >> T;
+  int N;
+  cin >> N;
 
-  for (int i = 1; i <= T; i++) {
-    cout << "Case #" << T << ": ";
-    process();
-  }
+  cout << nqueen(N) << endl;
 
   return 0;
 }

@@ -33,3 +33,7 @@
 *.class
 
 Pipfile.lock
+.fake
+
+practice.cpp
+practice.py
