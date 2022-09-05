@@ -35,5 +35,6 @@
 Pipfile.lock
 .fake
 
-practice.cpp
-practice.py
+practice*
+node_modules
+input.txt
