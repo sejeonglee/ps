@@ -1,9 +1,9 @@
-#include <bits/stdc++.h>
+#include <iostream>
 
 using namespace std;
 
 void process() {
-  int answer;
+  int answer = 10;
 
   cout << answer << "\n";
 }
