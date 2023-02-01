@@ -38,3 +38,8 @@ Pipfile.lock
 practice*
 node_modules
 input.txt
+
+*.ilk
+*.pdb
+.vscode
+.mypy_cache
