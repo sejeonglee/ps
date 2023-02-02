@@ -43,3 +43,4 @@ input.txt
 *.pdb
 .vscode
 .mypy_cache
+.vscode/*
