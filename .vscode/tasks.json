@@ -5,12 +5,11 @@
         "executable": "cmd.exe",
         "args": [
           "/C",
-          // The path to VsDevCmd.bat depends on the version of Visual Studio you have installed.
           "\"C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Auxiliary/Build/vcvarsall.bat\" arm64",
           "&&"
         ]
       }
-    }
+    },
   },
   "tasks": [
     {
@@ -29,8 +28,21 @@
       ],
       "group": {
         "kind": "build",
+        "isDefault": false
+      },
+    },
+    {
+      "label": "Compile and Run",
+      "type": "shell",
+      "command": "${fileDirname}\\${fileBasenameNoExtension}.exe",
+      "dependsOrder": "sequence",
+      "dependsOn": [
+        "cl.exe build active file"
+      ],
+      "group": {
+        "kind": "build",
         "isDefault": true
-      }
+      },
     }
   ],
   "version": "2.0.0"
